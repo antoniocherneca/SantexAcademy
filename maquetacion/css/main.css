@@ -27,7 +27,7 @@ body {
   position: fixed;
   top: 0;
   background-color: #fff;
-  opacity: .9;
+  opacity: .96;
   z-index: 10;
   display: none;
   place-content: center;
@@ -39,11 +39,12 @@ body {
 }
 
 .mobile-menu ul li {
-  padding: 5px 0;
+  padding: 3px 0;
 }
 
 .showMobileMenu {
   display: grid;
+  font-weight: 500;
 }
 
 .search {
@@ -52,7 +53,7 @@ body {
   position: fixed;
   top: 0;
   background-color: #fff;
-  opacity: .9;
+  opacity: .96;
   z-index: 10;
   display: none;
   place-content: center;
@@ -182,7 +183,6 @@ nav li:hover > ul {
 }
 
 .hamburguer button span {
-  border-radius: 5px;
   background-color: #000;
   display: block;
   width: 60%;
@@ -190,6 +190,10 @@ nav li:hover > ul {
   height: 2px;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+.hamburguer button span:hover {
+  background-color: #6b53f0;
 }
 
 .main-presentation .container {
@@ -247,7 +251,7 @@ nav li:hover > ul {
   margin-bottom: 20px;
 }
 
-.impact-description,
+.impact-text,
 .counter {
   width: 30%;
   font-size: 14px;
@@ -276,9 +280,11 @@ nav li:hover > ul {
 }
 
 .programs .container,
-.trainings .container {
-  padding: 60px 0;
-  padding: 60px 0;
+.trainings .container,
+.team .container,
+.partners .container,
+footer .container {
+  padding: 60px 30px;
 }
 
 .programs h2,
@@ -344,8 +350,9 @@ nav li:hover > ul {
 
 .counter {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .counter-cities,
@@ -375,7 +382,7 @@ nav li:hover > ul {
 }
 
 .team {
-  padding: 60px 0;
+  /* padding: 60px 0; */
   background-color: #f4f4f5;
 }
 
@@ -436,7 +443,7 @@ nav li:hover > ul {
 }
 
 .partners {
-  padding: 60px 0;
+  /* padding: 60px 0; */
 }
 
 .partners h2 {
@@ -495,8 +502,8 @@ nav li:hover > ul {
 footer {
   background-color: #201b24;
   color: #fff;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
 }
 
 footer a {
