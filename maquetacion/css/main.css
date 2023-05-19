@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+@font-face {
+  font-family: "custom";
+  src: url("../fonts/customfont.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.mobile-menu {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  opacity: .9;
+  z-index: 10;
+  display: none;
+  place-content: center;
+}
+
+.mobile-menu ul {
+  text-align: center;
+  margin: auto;
+}
+
+.mobile-menu ul li {
+  padding: 5px 0;
+}
+
+.showMobileMenu {
+  display: grid;
+}
+
+.search {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  opacity: .9;
+  z-index: 10;
+  display: none;
+  place-content: center;
+  padding: 50px;
+}
+
+.search input {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #000;
+  font-size: 50px;
+  width: 100%;
+}
+
+.showBoxSearch {
+  display: grid;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #888;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul li {
+  list-style: none;
+}
+
+li ul {
+  display: none;
+  position: absolute;
+  border: 1px solid #000;
+  top: 80px;
+  background-color: #fff;
+}
+
+li ul li {
+  padding: 10px 20px;
+}
+
+header .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+header nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 100%;
+}
+
+header nav a:hover {
+  color: #6b53f0;
+  transition: all .3s ease;
+}
+
+header nav {
+  height: 100%;
+}
+
+nav > ul li a {
+  display: block;
+}
+
+nav li:hover > ul {
+  display: block;
+  width: 200px;
+}
+
+.type-button {
+  border: 1px solid #000;
+  padding: 9px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.type-button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all .3s ease;
+}
+
+.responsive-menu {
+  width: 70px;
+  display: none;
+  z-index: 100;
+}
+
+.lupa {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hamburguer button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  height: 60px;
+  width: 45px;
+}
+
+.hamburguer button span {
+  border-radius: 5px;
+  background-color: #000;
+  display: block;
+  width: 60%;
+  margin: 5px auto;
+  height: 2px;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.main-presentation .container {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 46%;
+  max-width: 576px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 28px;
+}
+
+.main-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.main-buttons a,
+.programs a,
+.trainings a {
+  display: flex;
+  gap: 5px;
+}
+
+.main-buttons a:nth-child(2) {
+  color: #6b53f0;
+  border-color: #6b53f0;
+}
+
+.main-buttons a:nth-child(2):hover {
+  background-color: #6b53f0;
+  color: #fff;
+}
+
+.impact {
+  background-color: #201b24;
+  color: #fff;
+  padding: 120px 30px;
+}
+
+.impact-title {
+  margin: 10px 0 15px;
+}
+
+.impact-content {
+  display: flex;
+  justify-content: center;
+  gap: 85px;
+  margin-bottom: 20px;
+}
+
+.impact-description,
+.counter {
+  width: 30%;
+  font-size: 14px;
+}
+
+.impact-description {
+  line-height: 21px;
+}
+
+.img-team {
+  background-image: url('../images/people-team.jpg');
+  background-attachment: fixed;
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+}
+
+#programs {
+  position: relative;
+  top: 93%;
+}
+
+#trainings {
+  position: relative;
+  top: -50px;
+}
+
+.programs .container,
+.trainings .container {
+  padding: 60px 0;
+  padding: 60px 0;
+}
+
+.programs h2,
+.trainings h2 {
+  height: 70px;
+}
+
+.programs .xacademy-program,
+.programs .educational-robotics-program,
+.trainings .virtual-scam-training,
+.trainings .informatic-security {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 20px;
+}
+
+.xacademy-program-image,
+.xacademy-program-text,
+.educational-robotics-text,
+.educational-robotics-image,
+.virtual-scam-training-image,
+.virtual-scam-training-text,
+.informatic-security-text,
+.informatic-security-image {
+  width: 50%;
+}
+
+.xacademy-program-image img,
+.virtual-scam-training-image img {
+  width: 100%;
+  border-radius: 0 40px 40px 40px;
+}
+
+.educational-robotics-image img,
+.informatic-security-image img {
+  width: 100%;
+  border-radius: 40px 40px 0 40px;
+}
+
+.xacademy-program-text,
+.educational-robotics-text,
+.virtual-scam-training-text,
+.informatic-security-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 14px;
+  padding: 0 30px;
+  gap: 20px;
+}
+
+.xacademy-program-text img {
+  width: 200px;
+}
+
+.xacademy-program-text p,
+.educational-robotics-text p,
+.virtual-scam-training-text p,
+.informatic-security-text p {
+  line-height: 20px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter-cities,
+.counter-mentors,
+.counter-participants {
+  text-align: center;
+}
+
+.counter-cities-number,
+.counter-mentors-number span,
+.counter-participants-number {
+  font-weight: 700;
+  font-size: 50px;
+  color: #fff;
+}
+
+.counter-cities-description,
+.counter-mentors-description,
+.counter-participants-description {
+  color: #8c939c;
+}
+
+.counter-mentors-number {
+  color: #6B53F0;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+.team {
+  padding: 60px 0;
+  background-color: #f4f4f5;
+}
+
+.team .peoples-card-team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2% 2%;
+  height: 650px;
+}
+
+.team h2 {
+  margin: 10px 0 35px;
+}
+
+.team .card {
+  width: 18.4%;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-text {
+  background-color: #fff;
+  border-radius: 0 0 15px 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.card-text h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-text p:nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+  color: #8c939c;
+  margin-bottom: 10px;
+}
+
+.card .card-text a {
+  border: 1px solid #000;
+  padding: 7px 5px 5px;
+  border-radius: 50%;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.card .card-text a:hover {
+  background-color: #6b53f0;
+  color: #fff;
+  border-color: #6b53f0;
+  transition: all .3s ease;
+}
+
+.partners {
+  padding: 60px 0;
+}
+
+.partners h2 {
+  margin: 10px 0 25px;
+}
+
+.images-partners {
+  overflow: hidden;
+}
+
+.images-partners .slider {
+  display: flex;
+  animation: scroll 30s ease-in-out infinite;
+  -webkit-animation: scroll 30s ease-in-out infinite;
+  width: calc(240px * 18);
+}
+
+.slider .slide {
+  width: 240px;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0%, 31% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  32%, 64% {
+    -webkit-transform: translateX(calc(-240px * 3));
+    transform: translateX(calc(-240px * 3));
+  }
+  65%, 98% {
+    -webkit-transform: translateX(calc(-240px * 6));
+    transform: translateX(calc(-240px * 6));
+  }
+  99%, 100% {
+    -webkit-transform: translateX(calc(-240px * 9));
+    transform: translateX(calc(-240px * 9));
+  }
+}
+
+.images-partners img {
+  height: 90px;
+  filter: grayscale(1);
+  opacity: .5;
+}
+
+.images-partners img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+footer {
+  background-color: #201b24;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer a {
+  color: #d9d9d9;
+}
+
+footer .container {
+  display: flex;
+  color: #d9d9d9;
+}
+
+footer .container .logo {
+  width: 20%;
+  margin-left: 0 !important;
+}
+
+footer .container .slogan {
+  width: 25%;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+footer .container .menu1,
+footer .container .menu2,
+footer .container .menu3 {
+  width: 16%;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+footer .container .menu3 a {
+  display: flex;
+  gap: 7px;
+}
+
+footer .container .menu1 a:hover,
+footer .container .menu2 a:hover,
+footer .container .menu3 a:hover {
+  color: #fff;
+  transition: all .3s ease;
+}
+
+footer .container > div {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.button-up {
+  position: fixed;
+  bottom: 0;
+  right: 75px;
+  width: 48px;
+  height: 35px;
+  background-color: #333;
+  font-size: 25px;
+  font-family: "custom";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px 6px 0 0;
+  padding-top: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 0;
+}
+
+.button-up:hover {
+  background-color: #6b53f0;
+  transition: all .3s ease;
+}
+
+.show {
+  opacity: 1;
+  transition: all .4s ease;
+}
+
+.hamburguer button.open .top-line {
+  animation-name: top-line-animation;
+}
+
+.hamburguer button.open .middle-line {
+  animation-name: middle-line-animation;
+}
+
+.hamburguer button.open .bottom-line {
+  animation-name: bottom-line-animation;
+}
+
+.hamburguer button .top-line {
+  animation-name: top-line-animation-close;
+}
+
+.hamburguer button .middle-line {
+  animation-name: middle-line-animation-close;
+}
+
+.hamburguer button .bottom-line {
+  animation-name: bottom-line-animation-close;
+}
+
+@keyframes top-line-animation {
+  50%, 100% {
+    margin: 0 auto;
+    transform: translateY(2px) rotate(-45deg);
+  }
+}
+
+@keyframes middle-line-animation {
+  20%, 100% {
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes bottom-line-animation {
+  50%, 100% {
+    margin: 0 auto;
+    transform: translateY(-2px) rotate(45deg);
+  }
+}
+
+@keyframes top-line-animation-close {
+  0% {
+    margin: 0 auto;
+    transform: translateY(2px) rotate(-45deg);
+  }
+
+  50%, 100% {
+    margin: 5px auto;
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes middle-line-animation-close {
+  0% {
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
+  }
+
+  20%, 100% {
+    margin: 0 auto;
+    width: 60%;
+    opacity: 1;
+  }
+}
+
+@keyframes bottom-line-animation-close {
+  0% {
+    margin: 0 auto;
+    transform: translateY(-2px) rotate(45deg);
+  }
+
+  50%, 100% {
+    margin: 5px auto;
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@media (max-width: 980px) {
+  header {
+    padding-bottom: 80px;
+  }
+
+  .programs .container,
+  .trainings .container,
+  .team .container,
+  .partners .container,
+  footer .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 18px;
+  }
+
+  header nav {
+    margin: 41px auto 0 auto;
+  }
+
+  li ul {
+    top: 160px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .container .logo,
+  footer .container .slogan,
+  footer .container .menu1,
+  footer .container .menu2,
+  footer .container .menu3 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 820px) {
+  header {
+    padding-bottom: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  header .container {
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  header nav {
+    display: none;
+  }
+
+  .responsive-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: -7px;
+  }
+
+  .impact-content {
+    align-items: center;
+  }
+
+  .impact .counter {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .img-team {
+    display: none;
+  }
+
+  .programs .xacademy-program,
+  .programs .educational-robotics-program,
+  .trainings .virtual-scam-training,
+  .trainings .informatic-security {
+    flex-direction: column;
+  }
+
+  .xacademy-program-image,
+  .xacademy-program-text,
+  .educational-robotics-text,
+  .educational-robotics-image,
+  .virtual-scam-training-image,
+  .virtual-scam-training-text,
+  .informatic-security-text,
+  .informatic-security-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-presentation .container {
+    width: 100%;
+  }
+  
+  .main-title {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  .impact-content {
+    flex-direction: column;
+  }
+
+  .impact-description {
+    width: 100%;
+  }
+
+  .team .peoples-card-team {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2%;
+    height: auto;
+  }
+
+  .team .card {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

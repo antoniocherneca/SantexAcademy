@@ -1,47 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cluster 2 - X Academy</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Tecnología con Propósito</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body style="margin: 0;">
-    <div id="navbar" style="display: flex; border-bottom: 1px solid gray; padding: 14px 800px; justify-content: space-between;">
-        <div id="navbar-left">
-            <img src="technology-with-purpose.svg">
+
+<body>
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="#">Programas</a></li>
+      <li><a href="#">Capacitaciones</a></li>
+      <li><a href="#">Alianzas</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Sunate +</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">linkedin</a></li>
+    </ul>
+  </div>
+
+  <div class="search">
+    <input type="text" name="searchField" id="searchField" placeholder="Search...">
+  </div>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.svg" alt="Logo Technology With Purpose">
+      </div>
+  
+      <nav>
+        <ul>
+          <li><a href="#">Nosotros</a></li>
+          <li>
+            <a href="#">Programas</a>
+            <ul>
+              <li><a href="#">xAcademy</a></li>
+              <li><a href="#">Robótica educativa: la tecnología del futuro</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Capacitaciones</a>
+            <ul>
+              <li><a href="#">Seguridad informática para infancias</a></li>
+              <li><a href="#">Estafas virtuales: ¿cómo protegernos?</a></li>
+            </ul>
+          </li>
+          <li><a href="#partners">Alianzas</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="https://donaronline.org/technology-with-purpose-foudation/sumate-genera-impacto" target="_blank" class="type-button">Sumate +</a></li>
+          <li>
+            <a href="https://www.instagram.com/technologywithpurpose/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/technologywithpurpose/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="responsive-menu">
+        <div class="lupa"><i class="bi bi-search"></i></div>
+
+        <div class="hamburguer">
+          <button>
+            <span class="top-line"></span>
+            <span class="middle-line"></span>
+            <span class="bottom-line"></span>
+          </button>
         </div>
-        <div id="navbar-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capacitaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button>Sumate +</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="main-presentation">
+      <div class="container">
+        <h1 class="main-title">Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
+        <div class="main-buttons">
+          <a href="#" class="type-button">Contactanos
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+          </a>
+          <a href="https://donaronline.org/technology-with-purpose-foudation/sumate-genera-impacto" target="_blank" class="type-button">Sumate 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/></svg>
+          </a>
         </div>
+      </div>
+    </section>
+
+    <section class="impact">
+      <div class="container">
+        <h2 class="impact-title">. Impacto</h2>
+        <div class="impact-content">
+          <p class="impact-description">Buscamos construir alianzas y fortalecer vínculos para generar una transformación real en la comunidad. Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</p>
+          <div class="counter">
+            <div class="counter-cities">
+              <p class="counter-cities-number" id="counter-cities-number">0</p>
+              <p class="counter-cities-description">Localidades</p>
+            </div>
+            <div class="counter-mentors">
+              <p class="counter-mentors-number">+<span id="counter-mentors-number">0</span></p>
+              <p class="counter-mentors-description">Mentores</p>
+            </div>
+            <div class="counter-participants">
+              <p class="counter-participants-number" id="counter-participants-number">0</p>
+              <p class="counter-participants-description">Participantes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="img-team">
+      <div id="programs"></div>
+    </section>
+
+    <section class="programs">
+      <div class="container">
+        <h2 class="programs-title">. Programas</h2>
+        <article class="xacademy-program">
+          <div class="xacademy-program-image">
+            <img src="images/programs.jpg" alt="xAcademy Program">
+          </div>
+          <div class="xacademy-program-text">
+            <p class="xacademy-program-title"><img src="images/xacademy.svg" alt="xAcademy"></p>
+            <p class="xacademy-program-description">xAcademy es un programa de formación en tecnología llevado adelante por la Fundación Tecnología con Propósito junto a Santex que busca promover un cambio positivo en la comunidad a través de la educación en IT, apuntando a lograr la inserción laboral de personas en el mundo tecnológico.</p>
+            <a href="#" class="type-button"> Más info
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+            </a>
+          </div>
+        </article>
+  
+        <article class="educational-robotics-program">
+          <div class="educational-robotics-text">
+            <h4 class="educational-robotics-title">Robótica educativa: la tecnología del futuro</h4>
+            <p class="educational-robotics-description">Durante el curso, los alumnos y alumnas a través de la robótica desarrollan la curiosidad, el autodidactismo y las habilidades blandas necesarias para afrontar la revolución tecnológica del siglo XXI.</p>
+            <a href="#" class="type-button">Más info
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+              </span>
+            </a>
+          </div>
+          <div class="educational-robotics-image">
+            <img src="images/educational-robotics.jpg" alt="Educational Robotics">
+          </div>
+        </article>
+      </div>
+      <div id="trainings"></div>
+    </section>
+
+    <section class="trainings">
+      <div class="container">
+        <h2 class="trainings-title">. Capacitaciones</h2>
+        <article class="virtual-scam-training">
+          <div class="virtual-scam-training-image">
+            <img src="images/training.jpg" alt="Trainings">
+          </div>
+          <div class="virtual-scam-training-text">
+            <h4 class="virtual-scam-training-title">Estafas virtuales: ¿cómo protegernos?</h4>
+            <p class="virtual-scam-training-description">Los canales de comunicación a través de medios digitales cobraron gran protagonismo a partir de la pandemia. Al mismo tiempo, se perfeccionan cada vez más rápido las modalidades de estafas y fraudes virtuales. En esta capacitación vas a aprender diferentes tips y consejos útiles para navegar de manera más segura.</p>
+            <a href="#" class="type-button">Más info
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+            </a>
+          </div>
+        </article>
+  
+        <article class="informatic-security">
+          <div class="informatic-security-text">
+            <h4 class="informatic-security-title">Seguridad informática para infancias</h4>
+            <p class="informatic-security-description">¿Navegamos seguros en internet? La propuesta es una charla para niños y niñas donde se brindan herramientas de seguridad y autocuidado digital.</p>
+            <a href="#" class="type-button">Más info
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+            </a>
+          </div>
+          <div class="informatic-security-image">
+            <img src="images/educational-robotics.jpg" alt="Informatic Security">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <h2 class="team-title">. Equipo</h2>
+        <div class="peoples-card-team">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/team1.png" alt="Juan Santiago">
+            </div>
+            <div class="card-text">
+              <h5>Juan Santiago</h5>
+              <p class="">Presidente</p>
+              <p>
+                <a href="https://www.linkedin.com/in/juan-santiago-1461942/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-image">
+              <img src="images/team2.png" alt="Walter Abrigo">
+            </div>
+            <div class="card-text">
+              <h5>Walter Abrigo</h5>
+              <p>Secretario</p>
+              <p>
+                <a href="https://www.linkedin.com/in/walterabrigo/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="images/team3.png" alt="Gabriela Fernandez">
+            </div>
+            <div class="card-text">
+              <h5>Gabriela Fernandez</h5>
+              <p>Tesorera</p>
+              <p>
+                <a href="https://www.linkedin.com/in/gabriela-fernandez-53475b20/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-image">
+              <img src="images/team4.png" alt="Gabriel Dubini">
+            </div>
+            <div class="card-text">
+              <h5>Gabriel Dubini</h5>
+              <p>Tesorero</p>
+              <p>
+                <a href="#" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-image">
+              <img src="images/team5.png" alt="Florencia D’Agostino">
+            </div>
+            <div class="card-text">
+              <h5>Florencia D’Agostino</h5>
+              <p>Dirección Ejecutiva</p>
+              <p>
+                <a href="https://www.linkedin.com/in/florencia-dagostino/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-image">
+              <img src="images/team6.png" alt="Celeste Torresi">
+            </div>
+            <div class="card-text">
+              <h5>Celeste Torresi</h5>
+              <p>Comisión Directiva</p>
+              <p>
+                <a href="https://www.linkedin.com/in/celeste-torresi-77094739/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-image">
+              <img src="images/team7.png" alt="Lucia Jaimez">
+            </div>
+            <div class="card-text">
+              <h5>Lucia Jaimez</h5>
+              <p>Directora xAcademy</p>
+              <p>
+                <a href="https://www.linkedin.com/in/luc%C3%ADa-jaimez-365416151/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-image">
+              <img src="images/team8.png" alt="Agustín Chino">
+            </div>
+            <div class="card-text">
+              <h5>Agustín Chino</h5>
+              <p>Coord. Área Inclusión Social</p>
+              <p>
+                <a href="https://www.linkedin.com/in/agustin-chino-7b5561274/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-image">
+              <img src="images/team9.png" alt="Enzo Dotto">
+            </div>
+            <div class="card-text">
+              <h5>Enzo Dotto</h5>
+              <p>Relaciones Institucionales</p>
+              <p>
+                <a href="https://www.linkedin.com/in/edotto/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div id="partners"></div>
+      <div class="container">
+        <h2 class="partners-title">. Alianzas</h2>
+        <div class="images-partners">
+          <div class="slider">
+            <div class="slide">
+              <img src="images/partner1.png" alt="Municipalidad de Morteros">
+            </div>
+            <div class="slide">
+              <img src="images/partner2.png" alt="Naranja X">
+            </div>
+            <div class="slide">
+              <img src="images/partner3.png" alt="Santex">
+            </div>
+            <div class="slide">
+              <img src="images/partner4.png" alt="Banco Galicia">
+            </div>
+            <div class="slide">
+              <img src="images/partner5.png" alt="Banco de Alimentos Córdoba">
+            </div>
+            <div class="slide">
+              <img src="images/partner6.png" alt="Fundación Scrum">
+            </div>
+            <div class="slide">
+              <img src="images/partner7.png" alt="Grupo Inteligencia Educativa">
+            </div>
+            <div class="slide">
+              <img src="images/partner8.png" alt="Municipalidad de Jesús María">
+            </div>
+            <div class="slide">
+              <img src="images/partner9.png" alt="Municipalidad de Concordia">
+            </div>
+
+            <div class="slide">
+              <img src="images/partner1.png" alt="Municipalidad de Morteros">
+            </div>
+            <div class="slide">
+              <img src="images/partner2.png" alt="Naranja X">
+            </div>
+            <div class="slide">
+              <img src="images/partner3.png" alt="Santex">
+            </div>
+            <div class="slide">
+              <img src="images/partner4.png" alt="Banco Galicia">
+            </div>
+            <div class="slide">
+              <img src="images/partner5.png" alt="Banco de Alimentos Córdoba">
+            </div>
+            <div class="slide">
+              <img src="images/partner6.png" alt="Fundación Scrum">
+            </div>
+            <div class="slide">
+              <img src="images/partner7.png" alt="Grupo Inteligencia Educativa">
+            </div>
+            <div class="slide">
+              <img src="images/partner8.png" alt="Municipalidad de Jesús María">
+            </div>
+            <div class="slide">
+              <img src="images/partner9.png" alt="Municipalidad de Concordia">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo-footer.svg" alt="Logo Technology With Purpose">
+      </div>
+  
+      <div class="slogan">
+        <p>Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</p>
+      </div>
+
+      <div class="menu1">
+        <ul>
+          <li><a href="#">NOSOTROS</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+      </div>
+
+      <div class="menu2">
+        <ul>
+          <li><a href="#programs">PROGRAMAS</a></li>
+          <li><a href="#trainings">CAPACITACIONES</a></li>
+        </ul>
+      </div>
+
+      <div class="menu3">
+        <ul>
+          <li><a href="https://www.instagram.com/technologywithpurpose/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg> INSTAGRAM</li>
+          <li><a href="https://www.linkedin.com/company/technologywithpurpose/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg> LINKEDIN</a></li>
+        </ul>
+      </div>
     </div>
-    <div id="contact-form">
-        <form style="margin: 0 300px;" action="">
-            <div>
-                <input type="text" placeholder="Nombre y Apellido">
-                <input type="email" placeholder="Email">
-                <select name="" id="">
-                    <option value="">Programas</option>
-                    <option value="">Capacitaciones</option>
-                </select>
-            </div>
-            <div>
-                <textarea name="" cols="30" rows="10"></textarea>
-            </div>
-            <div>
-                <button>Enviar</button>
-            </div>
-        </form>
-    </div>
+    <a href="#" class="button-up"><strong>^</strong></a>
+  </footer>
+  
+  <script src="js/main.js"></script>
 </body>
 </html>
