@@ -180,6 +180,7 @@ nav li:hover > ul {
   padding: 0;
   height: 60px;
   width: 45px;
+  margin: -1px;
 }
 
 .hamburguer button span {
@@ -192,8 +193,14 @@ nav li:hover > ul {
   animation-fill-mode: forwards;
 }
 
-.hamburguer button span:hover {
+.hamburguer button:hover span {
   background-color: #6b53f0;
+  transition: all .3s ease;
+}
+
+.lupa:hover {
+  color: #6B53F0;
+  transition: all .3s ease;
 }
 
 .main-presentation .container {
