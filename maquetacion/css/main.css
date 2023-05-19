@@ -789,6 +789,10 @@ footer .container > div {
     flex-direction: column;
   }
 
+  .impact-text {
+    width: 100%;
+  }
+
   .impact-description {
     width: 100%;
   }
